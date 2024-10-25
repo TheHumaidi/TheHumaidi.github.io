@@ -68,7 +68,7 @@
       c += 1;
       var perc = ((100/tot*c) << 0) +"%";
       prog.style.width = perc;
-      stat.innerHTML = "جارٍ التحميل "+ perc;
+      stat.innerHTML = "Processing… Are you still there? "+ perc;
       if(c===tot) return doneLoading();
     }
     function doneLoading(){
