@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>404 - Page Not Found | Abdulrrhman AlHumaidi</title>
+  <meta content="Page not found - 404 error" name="description">
+  <meta content="404, error, page not found" name="keywords">
+
+  
+  <link href="assets/img/favicon.svg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200;300;400;500;600;700;800;900&family=Cairo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* 404 Page Specific Styles */
+    .error-404 {
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+      padding: 80px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .error-404 img {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    .error-404:before {
+      content: "";
+      background: color-mix(in srgb, var(--background-color), transparent 70%);
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+    }
+
+    .error-404 .container {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+    }
+
+    .error-404 .error-number {
+      font-size: 120px;
+      font-weight: 900;
+      color: var(--heading-color);
+      line-height: 1;
+      margin-bottom: 20px;
+      font-family: var(--heading-font);
+    }
+
+    .error-404 .error-message {
+      font-size: 18px;
+      color: var(--default-color);
+      margin-bottom: 30px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .error-404 .home-button {
+      display: inline-block;
+      background: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 12px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: none;
+      font-size: 16px;
+    }
+
+    .error-404 .home-button:hover {
+      background: color-mix(in srgb, var(--accent-color), transparent 25%);
+      color: var(--contrast-color);
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .error-404 .error-number {
+        font-size: 80px;
+      }
+      
+      .error-404 .error-message {
+        font-size: 16px;
+        padding: 0 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .error-404 .error-number {
+        font-size: 60px;
+      }
+    }
+
+    /* Sandworm hover effect */
+    .sandworm-text {
+      cursor: pointer;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .sandworm-text:hover {
+      color: #d4a574;
+      text-shadow: 0 0 8px rgba(212, 165, 116, 0.4);
+    }
+
+    /* Screen shake animation */
+    @keyframes shake {
+      0%, 100% { transform: translateX(0) translateY(0); }
+      10% { transform: translateX(-2px) translateY(-1px); }
+      20% { transform: translateX(2px) translateY(1px); }
+      30% { transform: translateX(-1px) translateY(-2px); }
+      40% { transform: translateX(1px) translateY(2px); }
+      50% { transform: translateX(-2px) translateY(1px); }
+      60% { transform: translateX(2px) translateY(-1px); }
+      70% { transform: translateX(-1px) translateY(-2px); }
+      80% { transform: translateX(1px) translateY(1px); }
+      90% { transform: translateX(-1px) translateY(-1px); }
+    }
+
+    .shake-screen {
+      animation: shake 0.8s ease-in-out;
+    }
+
+    /* Ensure shake doesn't affect scrollbars */
+    body.shaking {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="https://gravatar.com/avatar/b64a51cb3567841be723405abda9a533?size=256" alt="" class="img-fluid rounded-circle" style="width: 180px;">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      
+      <img src="assets/img/logo.png" alt="" class="sidebar-logo" style="height: 48px; width: 48px; margin-right: 10px;"> 
+      <h1 class="sitename" style="text-align: center;">
+        <div>Abdulrrhman</div>
+        <div>AlHumaidi</div>
+      </h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://x.com/Abdulrrhman_H" target="_blank" rel="noopener noreferrer" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.linkedin.com/in/abdulrrhman-alhumaidi" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.instagram.com/ah.alhumaidi" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://github.com/TheHumaidi" target="_blank" rel="noopener noreferrer" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://steamcommunity.com/id/GinToshiro/" target="_blank" rel="noopener noreferrer" class="steam"><i class="bi bi-steam"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#projects"><i class="bi bi-kanban navicon"></i> Projects</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="theme-toggle">
+      <button id="theme-toggle-btn" aria-label="Toggle theme">
+        <i class="bi bi-moon-fill dark-icon" title="Switch to dark mode"></i>
+        <i class="bi bi-sun-fill light-icon" title="Switch to light mode"></i>
+      </button>
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    
+    <section class="error-404 section dark-background">
+      <img src="assets/img/404-bg.jpg" alt="" data-aos="fade-in" class="">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="error-number">404</div>
+        <p class="error-message">The page you're looking for was either deleted, misplaced, or swallowed by a <span id="sandworm" class="sandworm-text">sandworm</span>.</p>
+        <a href="index.html" class="home-button">Return to Home</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+    <div class="surface-bg">
+      <div class="container">
+        <div class="copyright text-center ">
+          <p>© Abdulrrhman AlHumaidi — 2025</p>
+        </div>
+        <div class="credits">
+          
+          
+          
+          
+          A heavily customized version of a template by <a href="https://bootstrapmade.com/">BootstrapMade</a> and <a href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  <div id="preloader"></div>
+
+  
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  
+  <script src="assets/js/main.js"></script>
+
+  
+  <script src="assets/js/konami.js"></script>
+
+  <script>
+    // 404 Page specific handling
+    document.addEventListener('DOMContentLoaded', function() {
+      // Check if this page was loaded due to an invalid URL
+      const currentPath = window.location.pathname;
+      const validPaths = ['/', '/index.html', '/404.html'];
+      
+      // If path doesn't exist and isn't already 404.html, update browser history
+      if (!validPaths.includes(currentPath) && !currentPath.endsWith('404.html')) {
+        // Update the URL to show 404.html without redirecting
+        if (history.replaceState) {
+          history.replaceState(null, '404 - Page Not Found | Abdulrrhman AlHumaidi', '/404.html');
+        }
+      }
+      
+      // Add proper status handling for SEO
+      if (window.location.search.includes('status=404')) {
+        document.title = '404 - Page Not Found | Abdulrrhman AlHumaidi';
+      }
+    });
+
+    // Sandworm effect with improved audio handling
+    document.addEventListener('DOMContentLoaded', function() {
+      const sandwormElement = document.getElementById('sandworm');
+      let sandwormAudio = null;
+      let sandwormEffect = null;
+      let isShaking = false;
+      let audioLoaded = false;
+      let audioEnabled = false;
+      let lastTriggerTime = 0;
+      const cooldownPeriod = 1000; // 1 second cooldown
+
+      console.log('🐛 Sandworm effect initialized');
+
+      // Create audio element
+      function initAudio() {
+        try {
+          sandwormAudio = new Audio();
+          sandwormAudio.preload = 'auto';
+          sandwormAudio.volume = 0.7;
+          sandwormAudio.src = 'https://www.myinstants.com/media/sounds/dunes.mp3';
+
+          sandwormAudio.addEventListener('canplaythrough', function() {
+            audioLoaded = true;
+            audioEnabled = true;
+            console.log('✅ Audio loaded successfully');
+            updateSandwormStyle();
+          });
+
+          sandwormAudio.addEventListener('error', function(e) {
+            console.warn('❌ Audio failed to load:', e);
+            audioLoaded = false;
+            audioEnabled = false;
+            updateSandwormStyle();
+          });
+
+          sandwormAudio.load();
+          
+        } catch (error) {
+          console.error('Failed to create audio:', error);
+          audioEnabled = false;
+          updateSandwormStyle();
+        }
+      }
+
+      function updateSandwormStyle() {
+        if (sandwormElement) {
+          if (audioEnabled) {
+            sandwormElement.style.borderBottom = '1px dotted rgba(212, 165, 116, 0.5)';
+            sandwormElement.style.cursor = 'pointer';
+            sandwormElement.title = 'Hover for sandworm effect with sound!';
+          } else {
+            sandwormElement.style.borderBottom = '1px dotted rgba(255, 107, 107, 0.5)';
+            sandwormElement.style.cursor = 'pointer';
+            sandwormElement.title = 'Hover for sandworm effect (click to enable sound if blocked)';
+          }
+        }
+      }
+
+      function triggerSandwormEffect() {
+        console.log('🐛 Sandworm effect triggered');
+        
+        if (isShaking) {
+          console.log('Already shaking, skipping');
+          return;
+        }
+        
+        isShaking = true;
+
+        // Always trigger visual shake effect
+        console.log('Starting shake effect');
+        document.body.classList.add('shaking');
+        document.documentElement.classList.add('shake-screen');
+
+        // Try to play audio if available
+        if (sandwormAudio && audioLoaded && audioEnabled) {
+          console.log('Attempting to play audio');
+          
+          try {
+            sandwormAudio.currentTime = 0;
+            const playPromise = sandwormAudio.play();
+            
+            if (playPromise !== undefined) {
+              playPromise
+                .then(() => {
+                  console.log('🔊 Audio played successfully!');
+                  if (sandwormElement) {
+                    sandwormElement.style.color = '#d4a574';
+                    sandwormElement.style.textShadow = '0 0 8px rgba(212, 165, 116, 0.6)';
+                  }
+                })
+                .catch(error => {
+                  console.warn('Audio play blocked:', error.name);
+                  if (error.name === 'NotAllowedError') {
+                    audioEnabled = false;
+                    updateSandwormStyle();
+                  }
+                });
+            }
+          } catch (error) {
+            console.warn('Error playing audio:', error);
+          }
+        } else {
+          console.log('Audio not available - showing visual effect only');
+        }
+
+        // Remove shake effect after animation completes
+        setTimeout(() => {
+          document.body.classList.remove('shaking');
+          document.documentElement.classList.remove('shake-screen');
+          isShaking = false;
+          console.log('Shake effect completed');
+          
+          // Reset visual feedback
+          if (sandwormElement) {
+            sandwormElement.style.color = '';
+            sandwormElement.style.textShadow = '';
+          }
+        }, 800);
+      }
+
+      // Initialize audio
+      initAudio();
+
+      if (sandwormElement) {
+        console.log('Adding event listeners to sandworm element');
+        
+        // Mouse hover - primary interaction method
+        sandwormElement.addEventListener('mouseenter', function(e) {
+          console.log('Mouse enter triggered');
+          const currentTime = Date.now();
+          if (currentTime - lastTriggerTime >= cooldownPeriod) {
+            lastTriggerTime = currentTime;
+            triggerSandwormEffect();
+          }
+        });
+        
+        // Touch for mobile
+        sandwormElement.addEventListener('touchstart', function(e) {
+          console.log('Touch start triggered');
+          e.preventDefault();
+          const currentTime = Date.now();
+          if (currentTime - lastTriggerTime >= cooldownPeriod) {
+            lastTriggerTime = currentTime;
+            triggerSandwormEffect();
+          }
+        });
+
+        // Click event - fallback and for enabling audio if blocked
+        sandwormElement.addEventListener('click', function(e) {
+          console.log('Click triggered');
+          e.preventDefault();
+          
+          const currentTime = Date.now();
+          if (currentTime - lastTriggerTime < cooldownPeriod) {
+            console.log('Cooldown active, skipping click');
+            return;
+          }
+          
+          lastTriggerTime = currentTime;
+          
+          // If audio was blocked, try to enable it first
+          if (!audioEnabled && sandwormAudio) {
+            console.log('Attempting to enable audio after user interaction');
+            const playPromise = sandwormAudio.play();
+            if (playPromise !== undefined) {
+              playPromise
+                .then(() => {
+                  audioEnabled = true;
+                  console.log('Audio enabled after user interaction');
+                  sandwormAudio.pause();
+                  sandwormAudio.currentTime = 0;
+                  updateSandwormStyle();
+                  triggerSandwormEffect();
+                })
+                .catch(() => {
+                  triggerSandwormEffect(); // Still show visual effect
+                });
+            } else {
+              triggerSandwormEffect();
+            }
+          } else {
+            triggerSandwormEffect();
+          }
+        });
+
+        // Initial style update
+        updateSandwormStyle();
+      } else {
+        console.error('❌ Sandworm element not found!');
+      }
+    });
+  </script>
+</body>
+</html>
