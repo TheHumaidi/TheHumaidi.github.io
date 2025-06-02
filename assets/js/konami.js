@@ -13,6 +13,13 @@ class KonamiCode {
             'KeyB', 'KeyA'
         ];
         
+        // WASD alternative sequence
+        this.wasdSequence = [
+            'KeyW', 'KeyW', 'KeyS', 'KeyS',
+            'KeyA', 'KeyD', 'KeyA', 'KeyD',
+            'KeyB', 'KeyA'
+        ];
+        
         // Xbox controller button mapping for the same sequence
         this.controllerSequence = [
             'up', 'up', 'down', 'down',
